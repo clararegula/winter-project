@@ -1,8 +1,10 @@
 import React from 'react'
+import Dashboard from './components/Dashboard'
 
-const App = () => {
+const App = ()  => {
+    
     return (
-    <div>HELLO!</div>
+        <Dashboard/>
     )
 }
 
