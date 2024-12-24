@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Dashboard from './components/Dashboard'
 
-const App = ()  => {
+const App : FC = ()  => {
     
     return (
         <Dashboard/>
