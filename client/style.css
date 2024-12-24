@@ -1,0 +1,27 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex; /* Aligns buttons side by side */
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.dash-button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 20px;
+    border: 1px;
+    cursor: pointer;
+}
+
+.dash-button:hover {
+    background-color: #75aad8;
+    color: white;
+  }

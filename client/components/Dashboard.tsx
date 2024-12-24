@@ -19,11 +19,11 @@ const Dashboard = () => {
 
 
     return (
-    <div>
-        DASHY DASHBOARD : {counter}
         <div>
-            <button onClick={clickedAdd}>Add</button>
-            <button onClick={clickedSubtract}>Subtract</button>
+    <div className='dashboard'> DASHY DASHBOARD : {counter} </div>
+        <div className= {'button-container'}>
+            <button className={'dash-button'} onClick={clickedAdd}>Add</button>
+            <button className={'dash-button'} onClick={clickedSubtract}>Subtract</button>
         </div>
     </div>
     )
