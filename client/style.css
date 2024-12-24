@@ -1,3 +1,10 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #bfdef9; /* Choose your desired background color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Optional: Set a global font */
+}
+
 .dashboard {
     display: flex;
     justify-content: center;
@@ -5,7 +12,7 @@
 
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .button-container {
@@ -19,9 +26,11 @@
     padding: 10px 20px;
     border: 1px;
     cursor: pointer;
+    box-shadow: 2px -2px rgb(76, 83, 83);
+    border-radius: 10px;
 }
 
 .dash-button:hover {
-    background-color: #75aad8;
+    background-color: #4592d5;
     color: white;
-  }
+}
