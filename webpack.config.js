@@ -8,7 +8,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-      bundle: path.resolve(__dirname, './client/index.tsx') 
+      bundle: path.resolve(__dirname, './src/client/index.tsx') 
     },
     
     output: {
@@ -87,11 +87,11 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
        title: 'Development',
-       template: './client/index.html'
+       template: './src/client/index.html'
       }),
       new CopyWebpackPlugin({
         patterns: [
-          { from: './client/style.css', to: 'style.css' }  // This copies your CSS file to 'dist'
+          { from: './src/client/style.css', to: 'style.css' }  // This copies your CSS file to 'dist'
         ]
       }),
       // new BundleAnalyzerPlugin(),

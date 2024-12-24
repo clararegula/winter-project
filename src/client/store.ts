@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import testReducer from './reducers/testReducer'
+import calculationReducer from './reducers/calculationReducer'
 
 const store = configureStore({
     reducer: {
-        test: testReducer
+        calculation: calculationReducer
     }
 });
 

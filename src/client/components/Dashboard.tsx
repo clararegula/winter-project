@@ -1,21 +1,21 @@
 import React from 'react'
 import * as actions from '../actions/actions';
 import { useSelector, useDispatch } from 'react-redux';
+import { RootState, AppDispatch } from '../../types';
 
 const Dashboard = () => {
-    const counter = useSelector(store => store.test.counter);
-    const dispatch = useDispatch();
+    const counter = useSelector((store: RootState) => store.calculation.counter);
+    const dispatch = useDispatch<AppDispatch>();
 
     const clickedAdd = () => {
-        console.log("Add was clicked!")
+        // console.log("Add was clicked!")
         dispatch(actions.addCounter())
     }
 
     const clickedSubtract = () => {
-        console.log("Subtract was clicked!")
+        // console.log("Subtract was clicked!")
         dispatch(actions.subtractCounter())
     }
-
 
 
     return (

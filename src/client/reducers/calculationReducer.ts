@@ -1,11 +1,12 @@
 import * as types from '../constants/actionTypes';
+import { CounterState, Action } from '../../types';
 
 
-const initalState = {
+const initalState: CounterState = {
     counter: 0
 }
 
-const testReducer = (state = initalState, action) => {
+const calculationReducer = (state = initalState, action: Action) => {
     switch (action.type) {
        case types.ADD_COUNTER:
  
@@ -28,4 +29,4 @@ const testReducer = (state = initalState, action) => {
 }
 
 
-export default testReducer;
+export default calculationReducer;
